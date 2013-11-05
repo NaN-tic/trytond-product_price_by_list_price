@@ -1,12 +1,10 @@
 #This file is part product_price_by_list_price module for Tryton.
 #The COPYRIGHT file at the top level of this repository contains 
 #the full copyright notices and license terms.
-from decimal import Decimal
-from trytond.model import ModelView, ModelSQL, fields
-from trytond.wizard import Wizard, StateView, StateTransition, StateAction, \
-    Button
-from trytond.pool import Pool, PoolMeta
-from trytond.pyson import Eval, If, PYSONEncoder
+from trytond.model import ModelView, fields
+from trytond.wizard import Wizard, StateView, StateAction, Button
+from trytond.pool import PoolMeta
+from trytond.pyson import PYSONEncoder
 from trytond.transaction import Transaction
 
 __all__ = ['ProductPriceByPriceListStart', 'ProductPriceByPriceList', 'Product']
