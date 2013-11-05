@@ -17,7 +17,7 @@ from trytond.tests.test_tryton import test_view, test_depends
 
 class ProductPriceByListPriceTestCase(unittest.TestCase):
     '''
-    Test Product Price B yList Price module.
+    Test Product Price By List Price module.
     '''
 
     def setUp(self):
