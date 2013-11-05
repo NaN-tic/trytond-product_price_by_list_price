@@ -1,0 +1,51 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:product.price.by.list_price.start,customer:"
+msgid "Customer"
+msgstr "Client"
+
+msgctxt "field:product.price.by.list_price.start,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:product.price.by.list_price.start,price_list:"
+msgid "Price List"
+msgstr "Tarifa"
+
+msgctxt "model:ir.action,name:act_product_price_by_list_price"
+msgid "Price by Price List"
+msgstr "Preu per tarifa"
+
+msgctxt "model:ir.action,name:act_product_price_by_list_price_tree"
+msgid "Price by Price List"
+msgstr "Preu per tarifa"
+
+msgctxt "model:ir.action,name:wizard_product_price_by_list_price"
+msgid "Price by Price List"
+msgstr "Preu per tarifa"
+
+msgctxt "model:ir.ui.menu,name:menu_act_product_price_by_list_price"
+msgid "Price by Price List"
+msgstr "Preu per tarifa"
+
+msgctxt "model:product.price.by.list_price.start,name:"
+msgid "Product Price By Price List"
+msgstr "Preus producte per tarifa"
+
+msgctxt "view:product.price.by.list_price.start:"
+msgid "Prices by Price List"
+msgstr "Preus per tarifa"
+
+msgctxt "view:product.product:"
+msgid "Product Price By Price List"
+msgstr "Preus producte per tarifa"
+
+msgctxt "wizard_button:product.price.by_price_list,start,end:"
+msgid "Cancel"
+msgstr "Cancel·lar"
+
+msgctxt "wizard_button:product.price.by_price_list,start,open:"
+msgid "Get prices"
+msgstr "Preus"

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- This file is part product_price_list_price module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
+<tree string="Product Price By Price List">
+    <field name="template"/>
+    <field name="code"/>
+    <field name="price_x1"/>
+</tree>
