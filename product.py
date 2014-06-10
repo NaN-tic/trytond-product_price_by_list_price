@@ -16,7 +16,6 @@ class ProductPriceByPriceListStart(ModelView):
     __name__ = 'product.price.by.list_price.start'
     price_list = fields.Many2One('product.price_list', 'Price List',
             required=True)
-    customer = fields.Many2One('party.party', 'Customer')
 
 
 class ProductPriceByPriceList(Wizard):
@@ -34,7 +33,8 @@ class ProductPriceByPriceList(Wizard):
 
         context = {}
         context['price_list'] = self.start.price_list.id
-        context['customer'] = self.start.customer and self.start.customer.id or None
+        # get_sale_price need pass a party to eval compute price list
+        context['customer'] = Transaction().context.get('company')
         action['pyson_context'] = PYSONEncoder().encode(context)
         action['name'] += ' - %s' % (price_list.rec_name)
         return action, {}
