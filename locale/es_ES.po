@@ -14,6 +14,10 @@ msgctxt "field:product.price.by.list_price.start,price_list:"
 msgid "Price List"
 msgstr "Tarifa"
 
+msgctxt "field:product.product,price_x1:"
+msgid "Price x1"
+msgstr "Preu x1"
+
 msgctxt "model:ir.action,name:act_product_price_by_list_price"
 msgid "Price by Price List"
 msgstr "Precio por tarifa"
