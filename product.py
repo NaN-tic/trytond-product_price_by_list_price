@@ -8,7 +8,6 @@ from trytond.pyson import PYSONEncoder
 from trytond.transaction import Transaction
 
 __all__ = ['ProductPriceByPriceListStart', 'ProductPriceByPriceList', 'Product']
-__metaclass__ = PoolMeta
 
 
 class ProductPriceByPriceListStart(ModelView):
@@ -41,6 +40,7 @@ class ProductPriceByPriceList(Wizard):
 
 
 class Product:
+    __metaclass__ = PoolMeta
     __name__ = 'product.product'
     price_x1 = fields.Function(fields.Numeric('Price x1'),
         'price_by1')
