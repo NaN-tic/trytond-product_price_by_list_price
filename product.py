@@ -7,7 +7,8 @@ from trytond.pool import PoolMeta
 from trytond.pyson import PYSONEncoder
 from trytond.transaction import Transaction
 
-__all__ = ['ProductPriceByPriceListStart', 'ProductPriceByPriceList', 'Product']
+__all__ = ['ProductPriceByPriceListStart', 'ProductPriceByPriceList',
+    'Product']
 
 
 class ProductPriceByPriceListStart(ModelView):
@@ -21,11 +22,13 @@ class ProductPriceByPriceList(Wizard):
     'Product Price By Price List'
     __name__ = 'product.price.by_price_list'
     start = StateView('product.price.by.list_price.start',
-        'product_price_by_list_price.product_price_by_list_price_start_view_form', [
+        'product_price_by_list_price'
+        '.product_price_by_list_price_start_view_form', [
             Button('Cancel', 'end', 'tryton-cancel'),
             Button('Get prices', 'open', 'tryton-ok', default=True),
             ])
-    open = StateAction('product_price_by_list_price.act_product_price_by_list_price_tree')
+    open = StateAction(
+        'product_price_by_list_price.act_product_price_by_list_price_tree')
 
     def do_open(self, action):
         price_list = self.start.price_list
