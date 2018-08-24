@@ -42,8 +42,7 @@ class ProductPriceByPriceList(Wizard):
         return action, {}
 
 
-class Product:
-    __metaclass__ = PoolMeta
+class Product(metaclass=PoolMeta):
     __name__ = 'product.product'
     price_x1 = fields.Function(fields.Numeric('Price x1'),
         'price_by1')
