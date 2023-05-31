@@ -18,6 +18,7 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
         <record model="ir.action.act_window" id="act_product_price_by_list_price_tree">
             <field name="name">Price by Price List</field>
             <field name="res_model">product.product</field>
+            <field name="domain" eval="[('salable', '=', True)]" pyson="1"/>
         </record>
         <record model="ir.action.act_window.view" id="act_product_price_by_list_price_tree_view">
             <field name="sequence" eval="10"/>
