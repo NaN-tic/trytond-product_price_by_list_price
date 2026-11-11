@@ -42,4 +42,10 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
         <menuitem parent="product_price_list.menu_price_list" sequence="20"
             action="act_product_price_by_list_price" id="menu_act_product_price_by_list_price"/>
     </data>
+    <data>
+        <record model="ir.action-res.group" id="price_by_price_list_group_sale">
+            <field name="action" ref="act_product_price_by_list_price"/>
+            <field name="group" ref="sale.group_sale"/>
+        </record>
+    </data>
 </tryton>
